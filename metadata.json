@@ -1,0 +1,10 @@
+{
+  "uuid": "animated-wallpaper@jeremy",
+  "name": "Fond d'écran animé",
+  "description": "Joue une vidéo en boucle comme fond d'écran, sans jamais modifier le fond d'écran statique de GNOME. Interrupteur dans la barre supérieure, réglages dédiés, pause en plein écran et sur batterie. Nécessite mpv et une session Wayland (GNOME 50).",
+  "shell-version": [
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.animated-wallpaper",
+  "url": "https://github.com/zengdard/animated-wallpaper"
+}

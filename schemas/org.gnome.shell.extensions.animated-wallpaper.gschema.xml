@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="org.gnome.shell.extensions.animated-wallpaper.scaling">
+    <value nick="cover" value="0"/>
+    <value nick="contain" value="1"/>
+    <value nick="stretch" value="2"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.animated-wallpaper"
+          path="/org/gnome/shell/extensions/animated-wallpaper/">
+    <key name="active" type="b">
+      <default>false</default>
+      <summary>Fond d'écran animé actif</summary>
+      <description>État persistant de l'extension. À la connexion, la vidéo est relancée si cette clé est vraie.</description>
+    </key>
+
+    <key name="video-path" type="s">
+      <default>''</default>
+      <summary>Chemin de la vidéo</summary>
+      <description>Chemin absolu du fichier vidéo joué en boucle.</description>
+    </key>
+
+    <key name="scaling" enum="org.gnome.shell.extensions.animated-wallpaper.scaling">
+      <default>'cover'</default>
+      <summary>Mode de cadrage</summary>
+      <description>cover remplit l'écran, contain affiche la vidéo entière, stretch l'étire.</description>
+    </key>
+
+    <key name="pause-on-fullscreen" type="b">
+      <default>true</default>
+      <summary>Pause en plein écran</summary>
+      <description>Arrête la vidéo lorsqu'une application passe en plein écran.</description>
+    </key>
+
+    <key name="pause-on-battery" type="b">
+      <default>false</default>
+      <summary>Pause sur batterie</summary>
+      <description>Arrête la vidéo lorsque l'ordinateur fonctionne sur batterie.</description>
+    </key>
+
+    <key name="show-indicator" type="b">
+      <default>true</default>
+      <summary>Afficher l'indicateur</summary>
+      <description>Affiche l'interrupteur dans la barre supérieure.</description>
+    </key>
+  </schema>
+</schemalist>
